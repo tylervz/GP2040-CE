@@ -1,5 +1,6 @@
 export default {
-	'pin-version-warning-text': 'v0.7.6 이전 설정파일의 핀 매핑은 효과가 없습니다.',
+	'pin-version-warning-text':
+		'v0.7.6 이전 설정파일의 핀 매핑은 효과가 없습니다.',
 	'saved-success-message': '{{name}} 으로 저장 완료',
 	'save-header-text': '파일에 백업',
 	'save-export-option-label': '{{api}}옵션을 내보내기',

@@ -6,7 +6,7 @@ export default {
 		'zh-CN': '简体中文 (중국어 간체자)',
 		'de-DE': 'Deutsch (독일어)',
 		'ja-JP': '日本語 (일본어)',
-    'ko-KR': '한국어 (Korean)',
+		'ko-KR': '한국어 (Korean)',
 	},
 	'color-scheme': {
 		dark: '다크',

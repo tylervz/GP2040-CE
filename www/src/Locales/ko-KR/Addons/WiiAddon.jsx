@@ -1,6 +1,7 @@
 export default {
 	'header-text': 'Wii 익스텐션',
-	'sub-header-text':'<0>참고: 디스플레이가 동시에 활성화되면 이 애드온이 비활성화됩니다.</0>',
+	'sub-header-text':
+		'<0>참고: 디스플레이가 동시에 활성화되면 이 애드온이 비활성화됩니다.</0>',
 	'sda-pin-label': 'I2C SDA 핀',
 	'scl-pin-label': 'I2C SCL 핀',
 	'block-label': 'I2C 블럭',
@@ -64,9 +65,13 @@ export default {
 	'controller-analog-axis-x': 'X +/- 축',
 	'controller-analog-axis-y': 'Y +/- 축',
 	'controller-analog-axis-trigger': '트리거',
-	'analog-axis-mode-trigger':	'<0>모든 값의 범위가 인터페이스로 전송됩니다.</0>',
-	'analog-axis-mode-button':'<0>정의된 임계값을 초과한 후 [눌림] 상태로 설정하는 디지털 스위치 역할을 합니다.</0>',
-	'analog-axis-mode-normal-direction':'<0>모든 값의 범위는 조이스틱의 축으로 변환되며, 최솟값은 음의 극을, 최댓값은 양의 극으로 가정됩니다.</0>',
-	'analog-axis-mode-invert-direction':'<0>모든 값의 범위는 조이스틱의 축으로 변환되며, 최솟값은 음의 극을, 최댓값은 양의 극으로 가정됩니다..</0>',
+	'analog-axis-mode-trigger':
+		'<0>모든 값의 범위가 인터페이스로 전송됩니다.</0>',
+	'analog-axis-mode-button':
+		'<0>정의된 임계값을 초과한 후 [눌림] 상태로 설정하는 디지털 스위치 역할을 합니다.</0>',
+	'analog-axis-mode-normal-direction':
+		'<0>모든 값의 범위는 조이스틱의 축으로 변환되며, 최솟값은 음의 극을, 최댓값은 양의 극으로 가정됩니다.</0>',
+	'analog-axis-mode-invert-direction':
+		'<0>모든 값의 범위는 조이스틱의 축으로 변환되며, 최솟값은 음의 극을, 최댓값은 양의 극으로 가정됩니다..</0>',
 	'button-save': '컨트롤러 저장',
 };
