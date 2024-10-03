@@ -142,31 +142,31 @@ public:
 	virtual void setup();
 	virtual void preprocess() {}
 	virtual void process();
-    virtual std::string name() { return PCF8575AddonName; }
+	virtual std::string name() { return PCF8575AddonName; }
 
-    std::map<uint8_t, GpioMappingInfo> pinRef;
+	std::map<uint8_t, GpioMappingInfo> pinRef;
 private:
-    PCF8575* pcf;
+	PCF8575* pcf;
 
-    bool inputButtonUp = false;
-    bool inputButtonDown = false;
-    bool inputButtonLeft = false;
-    bool inputButtonRight = false;
-    bool inputButtonB1 = false;
-    bool inputButtonB2 = false;
-    bool inputButtonB3 = false;
-    bool inputButtonB4 = false;
-    bool inputButtonL1 = false;
-    bool inputButtonR1 = false;
-    bool inputButtonL2 = false;
-    bool inputButtonR2 = false;
-    bool inputButtonS1 = false;
-    bool inputButtonS2 = false;
-    bool inputButtonL3 = false;
-    bool inputButtonR3 = false;
-    bool inputButtonA1 = false;
-    bool inputButtonA2 = false;
-    bool inputButtonFN = false;
+	bool inputButtonUp = false;
+	bool inputButtonDown = false;
+	bool inputButtonLeft = false;
+	bool inputButtonRight = false;
+	bool inputButtonB1 = false;
+	bool inputButtonB2 = false;
+	bool inputButtonB3 = false;
+	bool inputButtonB4 = false;
+	bool inputButtonL1 = false;
+	bool inputButtonR1 = false;
+	bool inputButtonL2 = false;
+	bool inputButtonR2 = false;
+	bool inputButtonS1 = false;
+	bool inputButtonS2 = false;
+	bool inputButtonL3 = false;
+	bool inputButtonR3 = false;
+	bool inputButtonA1 = false;
+	bool inputButtonA2 = false;
+	bool inputButtonFN = false;
 };
 
 #endif  // _I2CAnalog_H_

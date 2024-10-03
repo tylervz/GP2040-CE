@@ -53,7 +53,7 @@ void KeyboardHostListener::setup() {
   _keyboard_host_enabled = false;
   _keyboard_dev_addr = 0;
   _keyboard_instance = 0;
-  
+
   _mouse_host_enabled = false;
   _mouse_dev_addr = 0;
   _mouse_instance = 0;
@@ -142,18 +142,18 @@ void KeyboardHostListener::report_received(uint8_t dev_addr, uint8_t instance, u
 }
 
 uint8_t KeyboardHostListener::getKeycodeFromModifier(uint8_t modifier) {
-	switch (modifier) {
-	  case KEYBOARD_MODIFIER_LEFTCTRL   : return HID_KEY_CONTROL_LEFT ;
-	  case KEYBOARD_MODIFIER_LEFTSHIFT  : return HID_KEY_SHIFT_LEFT   ;
-	  case KEYBOARD_MODIFIER_LEFTALT    : return HID_KEY_ALT_LEFT     ;
-	  case KEYBOARD_MODIFIER_LEFTGUI    : return HID_KEY_GUI_LEFT     ;
-	  case KEYBOARD_MODIFIER_RIGHTCTRL  : return HID_KEY_CONTROL_RIGHT;
-	  case KEYBOARD_MODIFIER_RIGHTSHIFT : return HID_KEY_SHIFT_RIGHT  ;
-	  case KEYBOARD_MODIFIER_RIGHTALT   : return HID_KEY_ALT_RIGHT    ;
-	  case KEYBOARD_MODIFIER_RIGHTGUI   : return HID_KEY_GUI_RIGHT    ;
-	}
+  switch (modifier) {
+    case KEYBOARD_MODIFIER_LEFTCTRL   : return HID_KEY_CONTROL_LEFT ;
+    case KEYBOARD_MODIFIER_LEFTSHIFT  : return HID_KEY_SHIFT_LEFT   ;
+    case KEYBOARD_MODIFIER_LEFTALT    : return HID_KEY_ALT_LEFT     ;
+    case KEYBOARD_MODIFIER_LEFTGUI    : return HID_KEY_GUI_LEFT     ;
+    case KEYBOARD_MODIFIER_RIGHTCTRL  : return HID_KEY_CONTROL_RIGHT;
+    case KEYBOARD_MODIFIER_RIGHTSHIFT : return HID_KEY_SHIFT_RIGHT  ;
+    case KEYBOARD_MODIFIER_RIGHTALT   : return HID_KEY_ALT_RIGHT    ;
+    case KEYBOARD_MODIFIER_RIGHTGUI   : return HID_KEY_GUI_RIGHT    ;
+  }
 
-	return 0;
+  return 0;
 }
 
 void KeyboardHostListener::preprocess_report()
