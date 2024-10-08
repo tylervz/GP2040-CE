@@ -11,7 +11,7 @@ const KeyboardMapper = ({
 	handleKeyChange,
 	validated,
 	getKeyMappingForButton,
-    excludeButtons,
+		excludeButtons,
 	...props
 }) => {
 	const { buttonLabelType, swapTpShareLabels } = buttonLabels;

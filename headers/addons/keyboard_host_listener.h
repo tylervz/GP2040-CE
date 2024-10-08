@@ -38,10 +38,10 @@ private:
 	GamepadState _keyboard_host_state;
 	bool _keyboard_host_enabled;
 	uint8_t getKeycodeFromModifier(uint8_t modifier);
-    void preprocess_report();
+	void preprocess_report();
 	void process_kbd_report(uint8_t dev_addr, hid_keyboard_report_t const *report);
-    void process_mouse_report(uint8_t dev_addr, hid_mouse_report_t const *report);
-	
+	void process_mouse_report(uint8_t dev_addr, hid_mouse_report_t const *report);
+
 	KeyboardButtonMapping _keyboard_host_mapDpadUp;
 	KeyboardButtonMapping _keyboard_host_mapDpadDown;
 	KeyboardButtonMapping _keyboard_host_mapDpadLeft;
@@ -63,21 +63,21 @@ private:
 	KeyboardButtonMapping _keyboard_host_mapButtonA3;
 	KeyboardButtonMapping _keyboard_host_mapButtonA4;
 
-    uint8_t _keyboard_dev_addr;
-    uint8_t _keyboard_instance;
+	uint8_t _keyboard_dev_addr;
+	uint8_t _keyboard_instance;
 
-    bool _mouse_host_enabled;
-    uint8_t _mouse_dev_addr;
-    uint8_t _mouse_instance;
+	bool _mouse_host_enabled;
+	uint8_t _mouse_dev_addr;
+	uint8_t _mouse_instance;
 
-    uint16_t mouseLeftMapping;
-    uint16_t mouseMiddleMapping;
-    uint16_t mouseRightMapping;
+	uint16_t mouseLeftMapping;
+	uint16_t mouseMiddleMapping;
+	uint16_t mouseRightMapping;
 
-    int16_t mouseX = 0;
-    int16_t mouseY = 0;
-    int16_t mouseZ = 0;
-    bool mouseActive = false;
+	int16_t mouseX = 0;
+	int16_t mouseY = 0;
+	int16_t mouseZ = 0;
+	bool mouseActive = false;
 };
 
 #endif  // _KeyboardHost_H_

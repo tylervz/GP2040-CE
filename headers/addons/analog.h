@@ -78,44 +78,44 @@
 
 typedef struct
 {
-    Pin_t x_pin;
-    Pin_t y_pin;
-    Pin_t x_pin_adc;
-    Pin_t y_pin_adc;
-    float x_value;
-    float y_value;
-    uint16_t x_center;
-    uint16_t y_center;
-    float xy_magnitude;
-    float x_magnitude;
-    float y_magnitude;
-    InvertMode analog_invert;
-    DpadMode analog_dpad;
-    float x_ema;
-    float y_ema;
+	Pin_t x_pin;
+	Pin_t y_pin;
+	Pin_t x_pin_adc;
+	Pin_t y_pin_adc;
+	float x_value;
+	float y_value;
+	uint16_t x_center;
+	uint16_t y_center;
+	float xy_magnitude;
+	float x_magnitude;
+	float y_magnitude;
+	InvertMode analog_invert;
+	DpadMode analog_dpad;
+	float x_ema;
+	float y_ema;
 } adc_instance;
 
 class AnalogInput : public GPAddon {
 public:
-    virtual bool available();
-    virtual void setup();       // Analog Setup
-    virtual void process();     // Analog Process
-    virtual void preprocess() {}
-    virtual std::string name() { return AnalogName; }
+	virtual bool available();
+	virtual void setup();       // Analog Setup
+	virtual void process();     // Analog Process
+	virtual void preprocess() {}
+	virtual std::string name() { return AnalogName; }
 private:
-    float readPin(Pin_t pin, uint16_t center);
-    float emaCalculation(float ema_value, float ema_previous);
-    uint16_t map(uint16_t x, uint16_t in_min, uint16_t in_max, uint16_t out_min, uint16_t out_max);
-    float magnitudeCalculation(adc_instance & adc_inst);
-    void radialDeadzone(adc_instance & adc_inst);
-    adc_instance adc_pairs[ADC_COUNT];
-    bool ema_option;
-    float ema_smoothing;
-    float error_rate;
-    float in_deadzone;
-    float out_deadzone;
-    bool auto_calibration;
-    bool forced_circularity;
+	float readPin(Pin_t pin, uint16_t center);
+	float emaCalculation(float ema_value, float ema_previous);
+	uint16_t map(uint16_t x, uint16_t in_min, uint16_t in_max, uint16_t out_min, uint16_t out_max);
+	float magnitudeCalculation(adc_instance & adc_inst);
+	void radialDeadzone(adc_instance & adc_inst);
+	adc_instance adc_pairs[ADC_COUNT];
+	bool ema_option;
+	float ema_smoothing;
+	float error_rate;
+	float in_deadzone;
+	float out_deadzone;
+	bool auto_calibration;
+	bool forced_circularity;
 };
 
 #endif  // _Analog_H_

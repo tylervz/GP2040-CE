@@ -16,8 +16,108 @@ indent_style = space
 indent_size = 2
 trim_trailing_whitespace = false
 
+[configs/**.h]
+indent_style = space
+insert_final_newline = false
+
 [configs/**.md]
 insert_final_newline = false
+
+[configs/**CMakeLists.txt]
+insert_final_newline = false
+
+[headers/**.h]
+indent_style = tab
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/addonmanager.h,headers/bitmaps.h,headers/buttonlayouts.h,headers/config_utils.h,headers/configmanager.h,headers/drivermanager.h,headers/gamepad/GamepadAuxState.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/gp2040.h,headers/gp2040aux.h,headers/gpaddon.h,headers/gpconfig.h,headers/gpdriver.h,headers/helper.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/layoutmanager.h,headers/peripheralmanager.h,headers/songs.h,headers/system.h,headers/usbhostmanager.h,headers/usblistener.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/tusb_config.h]
+indent_style = space
+indent_size = 2
+
+# TODO: try simplifying by making a section for headers/drivers/**.h that is indent_style = space & indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/drivers/astro/AstroDriver.h,headers/drivers/hid/HIDDriver.h,headers/drivers/keyboard/KeyboardDriver.h,headers/drivers/mdmini/MDMiniDriver.h,headers/drivers/neogeo/NeoGeoDriver.h,headers/drivers/net/NetDriver.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/drivers/shared/gpauthdriver.h,headers/drivers/shared/xgip_protocol.h,headers/drivers/shared/xinput_host.h,headers/drivers/switch/SwitchDriver.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[{headers/drivers/xboxog/XboxOriginalDriver.h,headers/drivers/xboxog/xid/xid_driver.h,headers/drivers/xboxog/xid/xid_gamepad.h,headers/drivers/xboxog/xid/xid_remote.h,headers/drivers/xboxog/xid/xid.h}]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/egret/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/pcengine/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/ps3/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/ps4/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/psclassic/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/psclassic/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/xbone/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/drivers/xinput/**.h]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/display/**.h]
+indent_style = space
+indent_size = 4
+
+[headers/display/fonts/**.h]
+indent_style = tab
+
+# To avoid disrupting pull requests, use the existing style for these .h files
+[headers/interfaces/**.h]
+indent_style = space
+indent_size = 4
 
 [*.scss]
 end_of_line = lf
@@ -25,10 +125,37 @@ end_of_line = lf
 [*.{js,jsx,ts,tsx}]
 quote_type = single
 
-[{package-lock.json,CMakeLists.txt}]
+[{package-lock.json,CMakeLists.txt,www/public/manifest.json}]
 indent_style = space
 indent_size = 2
 
+[src/**.cpp]
+indent_style = space
+indent_size = 4
+
+# To avoid disrupting pull requests, use the existing style for these cpp files
+[{src/addons/keyboard_host_listener.cpp,src/addons/keyboard_host.cpp}]
+indent_style = space
+indent_size = 2
+
+# To avoid disrupting pull requests, use the existing style for these cpp files
+[{src/addons/bootsel_button.cpp,src/addons/buzzerspeaker.cpp,src/addons/drv8833_rumble.cpp,src/addons/focus_mode.cpp,src/addons/neopicoleds.cpp,src/addons/playerleds.cpp,src/addons/tilt.cpp,src/drivers/astro/AstroDriver.cpp,src/drivers/egret/EgretDriver.cpp,src/drivers/hid/HIDDriver.cpp,src/gamepad/GamepadState.cpp,src/drivers/keyboard/KeyboardDriver.cpp,src/drivers/mdmini/MDMiniDriver.cpp,src/drivers/neogeo/NeoGeoDriver.cpp,src/drivers/pcengine/PCEngineDriver.cpp,src/drivers/psclassic/PSClassicDriver.cpp,src/drivers/switch/SwitchDriver.cpp,src/drivers/xinput/XInputDriver.cpp,src/interfaces/i2c/ssd1306/obd_ssd1306.cpp,src/gamepad.cpp,src/gp2040.cpp,src/gp2040aux.cpp,src/main.cpp,src/storagemanager.cpp,src/system.cpp,src/usbdriver.cpp}]
+indent_style = tab
+indent_size = 2
+
+# TODO: try adding the same settings for src/**.c and see if any errors are raised
+[src/drivers/xboxog/**.c]
+indent_style = space
+indent_size = 4
+
 [pico_sdk_import.cmake]
+indent_style = space
+indent_size = 4
+
+[modules/**.cmake]
+indent_style = space
+insert_final_newline = false
+
+[proto/**.proto]
 indent_style = space
 indent_size = 4

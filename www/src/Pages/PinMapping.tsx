@@ -107,7 +107,7 @@ const getMultiValue = (pinData) => {
 						type === 'customButtonMask') ||
 					(pinData.customDpadMask & customDpadMask &&
 						type === 'customDpadMask'),
-		  )
+			)
 		: options.filter((option) => option.value === pinData.action);
 };
 const ProfileLabel = memo(function ProfileLabel({

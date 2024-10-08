@@ -8,22 +8,22 @@
 class DisplayState {
 public:
 private:
-    std::vector<char*> options;
+	std::vector<char*> options;
 };
 
 class DisplayMenu {
 public:
-    
+
 private:
 };
 
 class DisplayConfig : public GPConfig
 {
 public:
-    virtual void setup();
-    virtual void loop();
+	virtual void setup();
+	virtual void loop();
 private:
-    std::vector<char **> menu_data;
+	std::vector<char **> menu_data;
 };
 
 #endif
