@@ -568,8 +568,8 @@ export default function MacrosPage() {
 																macroNumber: i + 1,
 															})
 														: macro.macroLabel.length > 24
-														? macro.macroLabel.substr(0, 24) + '...'
-														: macro.macroLabel}
+															? macro.macroLabel.substr(0, 24) + '...'
+															: macro.macroLabel}
 												</Nav.Link>
 											</Nav.Item>
 										))}
