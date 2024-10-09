@@ -49,62 +49,18 @@ indent_size = 4
 indent_style = space
 indent_size = 2
 
-# TODO: try simplifying by making a section for headers/drivers/**.h that is indent_style = space & indent_size = 4
-
 # To avoid disrupting pull requests, use the existing style for these .h files
-[{headers/drivers/astro/AstroDriver.h,headers/drivers/hid/HIDDriver.h,headers/drivers/keyboard/KeyboardDriver.h,headers/drivers/mdmini/MDMiniDriver.h,headers/drivers/neogeo/NeoGeoDriver.h,headers/drivers/net/NetDriver.h}]
+[headers/drivers/**.h]
 indent_style = space
 indent_size = 4
 
-# To avoid disrupting pull requests, use the existing style for these .h files
-[{headers/drivers/shared/gpauthdriver.h,headers/drivers/shared/xgip_protocol.h,headers/drivers/shared/xinput_host.h,headers/drivers/switch/SwitchDriver.h}]
-indent_style = space
-indent_size = 4
+# To avoid disrupting pull requests, keep using tabs for these .h files
+[{headers/drivers/astro/AstroDescriptors.h,headers/drivers/hid/HIDDescriptors.h,headers/drivers/keyboard/KeyboardDescriptors.h,headers/drivers/mdmini/MDMiniDescriptors.h,headers/drivers/neogeo/NeoGeoDescriptors.h}]
+indent_style = tab
 
-# To avoid disrupting pull requests, use the existing style for these .h files
-[{headers/drivers/xboxog/XboxOriginalDriver.h,headers/drivers/xboxog/xid/xid_driver.h,headers/drivers/xboxog/xid/xid_gamepad.h,headers/drivers/xboxog/xid/xid_remote.h,headers/drivers/xboxog/xid/xid.h}]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/egret/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/pcengine/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/ps3/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/ps4/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/psclassic/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/psclassic/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/xbone/**.h]
-indent_style = space
-indent_size = 4
-
-# To avoid disrupting pull requests, use the existing style for these .h files
-[headers/drivers/xinput/**.h]
-indent_style = space
-indent_size = 4
+# To avoid disrupting pull requests, keep using tabs for these .h files
+[{headers/drivers/shared/driverhelper.h,headers/drivers/switch/SwitchDescriptors.h,headers/drivers/xboxog/XboxOriginalDescriptors.h,headers/drivers/xboxog/xid/xid_steelbattalion.h}]
+indent_style = tab
 
 # To avoid disrupting pull requests, use the existing style for these .h files
 [headers/display/**.h]
@@ -144,7 +100,8 @@ indent_style = tab
 indent_size = 2
 
 # TODO: try adding the same settings for src/**.c and see if any errors are raised
-[src/drivers/xboxog/**.c]
+# [src/drivers/xboxog/**.c]
+[src/**.c]
 indent_style = space
 indent_size = 4
 
