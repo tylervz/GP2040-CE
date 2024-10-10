@@ -95,7 +95,7 @@ const Keyboard = ({
 					<div className="mb-2">
 						<KeyboardMapper
 							buttonLabels={buttonLabels}
-                            excludeButtons={excludedButtons}
+														excludeButtons={excludedButtons}
 							handleKeyChange={handleKeyChange(values, setFieldValue)}
 							validated={validated}
 							getKeyMappingForButton={getKeyMappingForButton(values)}

@@ -14,7 +14,7 @@
 #define SLIDER_SOCD_SLOT_ONE SOCD_MODE_UP_PRIORITY
 #endif
 
-#ifndef SLIDER_SOCD_SLOT_TWO 
+#ifndef SLIDER_SOCD_SLOT_TWO
 #define SLIDER_SOCD_SLOT_TWO  SOCD_MODE_SECOND_INPUT_PRIORITY
 #endif
 
@@ -27,20 +27,20 @@
 
 class SliderSOCDInput : public GPAddon {
 public:
-    virtual bool available();
+	virtual bool available();
 	virtual void setup();       // SliderSOCD Button Setup
-    virtual void reinit();
-    virtual void preprocess() {}
+	virtual void reinit();
+	virtual void preprocess() {}
 	virtual void process();     // SliderSOCD process
-    virtual std::string name() { return SliderSOCDName; }
+	virtual std::string name() { return SliderSOCDName; }
 private:
-    SOCDMode read();
+	SOCDMode read();
 
-    Mask_t upPrioModeMask = 0;
-    Mask_t neutralModeMask = 0;
-    Mask_t secondInputModeMask = 0;
-    Mask_t firstInputModeMask = 0;
-    Mask_t bypassModeMask = 0;
+	Mask_t upPrioModeMask = 0;
+	Mask_t neutralModeMask = 0;
+	Mask_t secondInputModeMask = 0;
+	Mask_t firstInputModeMask = 0;
+	Mask_t bypassModeMask = 0;
 };
 
 #endif  // _SliderSOCD_H_

@@ -36,31 +36,31 @@ public:
 	virtual void preprocess() {}
 	virtual std::string name() { return SNESpadName; }
 private:
-    SNESpad * snes;
-    uint32_t uIntervalMS;
-    uint32_t nextTimer;
+	SNESpad * snes;
+	uint32_t uIntervalMS;
+	uint32_t nextTimer;
 
-    bool buttonA = false;
-    bool buttonB = false;
-    bool buttonX = false;
-    bool buttonY = false;
-    bool buttonL = false;
-    bool buttonR = false;
+	bool buttonA = false;
+	bool buttonB = false;
+	bool buttonX = false;
+	bool buttonY = false;
+	bool buttonL = false;
+	bool buttonR = false;
 
-    bool buttonSelect = false;
-    bool buttonStart = false;
+	bool buttonSelect = false;
+	bool buttonStart = false;
 
-    bool dpadUp     = false;
-    bool dpadDown   = false;
-    bool dpadLeft   = false;
-    bool dpadRight  = false;
+	bool dpadUp     = false;
+	bool dpadDown   = false;
+	bool dpadLeft   = false;
+	bool dpadRight  = false;
 
-    uint16_t leftX = 0;
-    uint16_t leftY = 0;
-    uint16_t rightX = 0;
-    uint16_t rightY = 0;
+	uint16_t leftX = 0;
+	uint16_t leftY = 0;
+	uint16_t rightX = 0;
+	uint16_t rightY = 0;
 
-    uint16_t map(uint16_t x, uint16_t in_min, uint16_t in_max, uint16_t out_min, uint16_t out_max);
+	uint16_t map(uint16_t x, uint16_t in_min, uint16_t in_max, uint16_t out_min, uint16_t out_max);
 };
 
 #endif  // _SNESpadAddon_H
