@@ -1,4 +1,3 @@
-
 export default {
 	'header-text': '디스플레이 설정',
 	'sub-header-text':
