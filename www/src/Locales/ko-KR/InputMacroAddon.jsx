@@ -7,8 +7,7 @@ export default {
 	'input-macro-macro-exclusive': '배타(다른 매크로로 전환 불가)"',
 	'input-macro-macro-interruptible': '인터럽트(유저조작으로 매크로 중단)',
 	'input-macro-macro-show-frames': '프레임 표시 (1 프레임 = 16.666 ms)',
-	'input-macro-macro-uses-buttons':
-		'작동에 매크로 버튼 + 컨트롤러 버튼을 사용',
+	'input-macro-macro-uses-buttons': '작동에 매크로 버튼 + 컨트롤러 버튼을 사용',
 	'input-macro-macro-button-pin-plus': '버튼 할당：',
 	'input-macro-header-text': '매크로 개요',
 	'input-macro-macro-list-txt': '매크로 {{macroNumber}} 설정',

@@ -17,7 +17,7 @@ export default {
 		'주의: 아날로그 스틱 설정은 게임 패드의 왼쪽 스틱과 오른쪽 스틱의 입력을 덮어씁니다',
 	'analog-available-pins-text': '이용 가능 단자 : {{pins}}',
 	'analog-available-pins-option-not-set': '없음',
-	'analog-adc-1-pin-x-label':  '아날로그 스틱 1 X 단자',
+	'analog-adc-1-pin-x-label': '아날로그 스틱 1 X 단자',
 	'analog-adc-1-pin-y-label': '아날로그 스틱 1 Y 단자',
 	'analog-adc-1-mode-label': '아날로그 스틱 1 모드',
 	'analog-adc-1-invert-label': '아날로그 스틱 1 반전',
