@@ -6,8 +6,8 @@
 class SerialConfig : public GPConfig
 {
 public:
-    virtual void setup();
-    virtual void loop();
+	virtual void setup();
+	virtual void loop();
 private:
 };
 

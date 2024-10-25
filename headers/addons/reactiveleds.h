@@ -29,28 +29,28 @@
 // Reactive LED
 class ReactiveLEDAddon : public GPAddon
 {
-    public:
-        virtual bool available();
-        virtual void setup();
-        virtual void preprocess() {}
-        virtual void process();
-        virtual std::string name() { return ReactiveLEDName; }
-    private:
-        struct ReactiveLEDPinState {
-            uint16_t pinNumber = -1;
-            ReactiveLEDMode modeDown = ReactiveLEDMode::REACTIVE_LED_STATIC_ON;
-            ReactiveLEDMode modeUp = ReactiveLEDMode::REACTIVE_LED_STATIC_OFF;
-            GpioAction action = GpioAction::NONE;
-            uint8_t value = 0;
-            bool currState = false;
-            bool prevState = false;
-            uint32_t lastUpdate;
-            uint32_t currUpdate;
-        };
+	public:
+		virtual bool available();
+		virtual void setup();
+		virtual void preprocess() {}
+		virtual void process();
+		virtual std::string name() { return ReactiveLEDName; }
+	private:
+		struct ReactiveLEDPinState {
+			uint16_t pinNumber = -1;
+			ReactiveLEDMode modeDown = ReactiveLEDMode::REACTIVE_LED_STATIC_ON;
+			ReactiveLEDMode modeUp = ReactiveLEDMode::REACTIVE_LED_STATIC_OFF;
+			GpioAction action = GpioAction::NONE;
+			uint8_t value = 0;
+			bool currState = false;
+			bool prevState = false;
+			uint32_t lastUpdate;
+			uint32_t currUpdate;
+		};
 
-        ReactiveLEDPinState ledPins[REACTIVE_LED_COUNT];
+		ReactiveLEDPinState ledPins[REACTIVE_LED_COUNT];
 
-        void setLEDByMode(ReactiveLEDPinState &ledState, bool pressed);
+		void setLEDByMode(ReactiveLEDPinState &ledState, bool pressed);
 };
 
 #endif

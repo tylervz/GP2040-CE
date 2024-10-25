@@ -38,16 +38,16 @@ public:
 	virtual void setup();       // Analog Setup
 	virtual void preprocess() {}
 	virtual void process();     // Analog Process
-    virtual std::string name() { return SPIAnalog1256Name; }
+	virtual std::string name() { return SPIAnalog1256Name; }
 private:
-    uint8_t convert24to8bit(float voltage);
-    uint16_t convert24to16bit(float voltage);
+	uint8_t convert24to8bit(float voltage);
+	uint16_t convert24to16bit(float voltage);
 
-    ADS1256 * ads;
-    float values[ADS1256_CHANNEL_COUNT]; // Cache for latest read values
-    bool enableTriggers;
-    uint8_t readChannelCount; // Number of channels to read from the ADC
-    float analogMax = ADS1256_MAX_3V;
+	ADS1256 * ads;
+	float values[ADS1256_CHANNEL_COUNT]; // Cache for latest read values
+	bool enableTriggers;
+	uint8_t readChannelCount; // Number of channels to read from the ADC
+	float analogMax = ADS1256_MAX_3V;
 };
 
 #endif  // SPI_ANALOG_ADS1256_H_
