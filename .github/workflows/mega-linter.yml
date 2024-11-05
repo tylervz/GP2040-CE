@@ -60,11 +60,7 @@ jobs:
         env:
           # Validates all source when push on main, else just the git diff with
           # main. Override with true if you always want to lint all sources
-          VALIDATE_ALL_CODEBASE: >-
-            ${{
-              github.event_name == 'push' &&
-              contains(fromJSON('["refs/heads/main", "refs/heads/master"]'), github.ref)
-            }}
+          VALIDATE_ALL_CODEBASE: TRUE
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

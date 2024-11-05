@@ -51,7 +51,7 @@ indent_size = 2
 
 # To avoid disrupting pull requests, use the existing style for these .h files
 [headers/drivers/**.h]
-indent_style = space
+indent_style = tab
 indent_size = 4
 
 # To avoid disrupting pull requests, keep using tabs for these .h files

@@ -28,6 +28,9 @@ DISABLE_ERRORS_LINTERS: [ACTION_ACTIONLINT, REPOSITORY_GRYPE, REPOSITORY_TRIVY, 
 SHOW_ELAPSED_TIME: false
 FILEIO_REPORTER: false
 # DISABLE_ERRORS: true # Uncomment if you want MegaLinter to detect errors but not block CI to pass
+
+# Only lint the .h files under the header directory
+FILTER_REGEX_INCLUDE: "(headers/.*.h)"
 # Exclude certain files from linting
 FILTER_REGEX_EXCLUDE: "(lib/.*)"
 # If we enable ESLint in the future, use our ESLint rules file
